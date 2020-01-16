@@ -1,0 +1,12 @@
+<p>testing-stuff works!</p>
+<div class="container">
+        <div *ngFor='let user of data' class="card m-3">
+            <div class="card-body">
+                <p>name: {{user.name}}</p>
+                <p>lastname: {{user.lastname}}</p>
+                <p>age: {{user.age}}</p>
+                <app-innerTesting [user]='user'></app-innerTesting>
+            </div>
+    </div>
+</div>
+
